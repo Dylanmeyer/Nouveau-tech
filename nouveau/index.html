@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nouveau Tech Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p style="font-weight: 800">Coming soon to Snapchat!</p>
+      </div>
+    </div>
+    <div class="bg">
+      <div class="container">
+        <div class="headline">
+          <img src="./img/n-tech-06.png" alt="Logo" />
+          <h1 style="font-size: 5vw">The future of digital is now</h1>
+        </div>
+        <div class="social-buttons">
+          <!-- facebook  Button -->
+          <a
+            href="https://www.facebook.com/nouveautechdigital"
+            target="blank"
+            class="social-margin"
+          >
+            <div class="social-icon facebook">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </a>
+          <!-- Instagram Button -->
+          <a
+            href="https://www.instagram.com/nouveautech.digital/?hl=en"
+            target="blank"
+            class="social-margin"
+          >
+            <div class="social-icon instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+          </a>
+          <!-- Twitter Button -->
+          <a
+            href="http://mobile.twitter.com/nouveau_tech"
+            class="social-margin"
+            target="blank"
+          >
+            <div class="social-icon twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </a>
+          <!-- Website  Button -->
+          <a
+            href="https://nouveau-tech.digital"
+            target="blank"
+            class="social-margin"
+          >
+            <div class="social-icon website">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+          </a>
+          <!-- Fiverr  Button -->
+          <a
+            href="https://www.fiverr.com/nouveau_tech_dig?up_rollout=true#!"
+            target="blank"
+            class="social-margin"
+          >
+            <div class="social-media fiverr">
+              <img
+                src="./img/fiverr_icon.png"
+                alt="fiverr link"
+                style="margin: -14px 1px"
+              />
+            </div>
+          </a>
+          <!-- Snapchat Button -->
+          <a href="#" class="social-margin" id="myBtn">
+            <div class="social-icon snapchat">
+              <i class="fa fa-snapchat" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
